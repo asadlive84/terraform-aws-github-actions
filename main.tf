@@ -1,13 +1,14 @@
 # main.tf
 
-terraform {
-  backend "remote" {
-    organization = "your-project-name"
+terraform { 
+  cloud { 
+    
+    organization = "first_learn" 
 
-    workspaces {
-      name = "your-workspace-name"
-    }
-  }
+    workspaces { 
+      name = "poridi-workspace" 
+    } 
+  } 
 }
 
 provider "aws" {
